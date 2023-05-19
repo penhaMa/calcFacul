@@ -1,0 +1,11 @@
+C:\Users\penha\source\repos\calcFacul\calcFacul\bin\Debug\calcFacul.exe.config
+C:\Users\penha\source\repos\calcFacul\calcFacul\bin\Debug\calcFacul.exe
+C:\Users\penha\source\repos\calcFacul\calcFacul\bin\Debug\calcFacul.pdb
+C:\Users\penha\source\repos\calcFacul\calcFacul\obj\Debug\calcFacul.csproj.AssemblyReference.cache
+C:\Users\penha\source\repos\calcFacul\calcFacul\obj\Debug\calcFacul.csproj.SuggestedBindingRedirects.cache
+C:\Users\penha\source\repos\calcFacul\calcFacul\obj\Debug\calcFacul.Form1.resources
+C:\Users\penha\source\repos\calcFacul\calcFacul\obj\Debug\calcFacul.Properties.Resources.resources
+C:\Users\penha\source\repos\calcFacul\calcFacul\obj\Debug\calcFacul.csproj.GenerateResource.cache
+C:\Users\penha\source\repos\calcFacul\calcFacul\obj\Debug\calcFacul.csproj.CoreCompileInputs.cache
+C:\Users\penha\source\repos\calcFacul\calcFacul\obj\Debug\calcFacul.exe
+C:\Users\penha\source\repos\calcFacul\calcFacul\obj\Debug\calcFacul.pdb
