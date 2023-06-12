@@ -28,24 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.calcular = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.p1 = new System.Windows.Forms.TextBox();
+            this.trabalho = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.resultado = new System.Windows.Forms.Label();
+            this.limpar = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // calcular
             // 
-            this.button1.Location = new System.Drawing.Point(391, 64);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 45);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Calcular";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.calcular.Location = new System.Drawing.Point(376, 65);
+            this.calcular.Name = "calcular";
+            this.calcular.Size = new System.Drawing.Size(97, 45);
+            this.calcular.TabIndex = 0;
+            this.calcular.Text = "Calcular";
+            this.calcular.UseVisualStyleBackColor = true;
+            this.calcular.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -56,19 +63,19 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Nota P1";
             // 
-            // textBox1
+            // p1
             // 
-            this.textBox1.Location = new System.Drawing.Point(178, 87);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 2;
+            this.p1.Location = new System.Drawing.Point(178, 87);
+            this.p1.Name = "p1";
+            this.p1.Size = new System.Drawing.Size(100, 22);
+            this.p1.TabIndex = 2;
             // 
-            // textBox2
+            // trabalho
             // 
-            this.textBox2.Location = new System.Drawing.Point(178, 133);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 3;
+            this.trabalho.Location = new System.Drawing.Point(178, 133);
+            this.trabalho.Name = "trabalho";
+            this.trabalho.Size = new System.Drawing.Size(100, 22);
+            this.trabalho.TabIndex = 3;
             // 
             // label2
             // 
@@ -79,39 +86,85 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Nota Trab";
             // 
-            // label3
+            // resultado
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(161, 188);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 16);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Você Precisa Tirar....";
+            this.resultado.AutoSize = true;
+            this.resultado.Location = new System.Drawing.Point(161, 188);
+            this.resultado.Name = "resultado";
+            this.resultado.Size = new System.Drawing.Size(131, 16);
+            this.resultado.TabIndex = 5;
+            this.resultado.Text = "Você Precisa Tirar....";
             // 
-            // button2
+            // limpar
             // 
-            this.button2.Location = new System.Drawing.Point(391, 137);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 45);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Limpar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.limpar.Location = new System.Drawing.Point(376, 138);
+            this.limpar.Name = "limpar";
+            this.limpar.Size = new System.Drawing.Size(97, 45);
+            this.limpar.TabIndex = 6;
+            this.limpar.Text = "Limpar";
+            this.limpar.UseVisualStyleBackColor = true;
+            this.limpar.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.arquivoToolStripMenuItem,
+            this.editarToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(540, 28);
+            this.menuStrip1.TabIndex = 7;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // arquivoToolStripMenuItem
+            // 
+            this.arquivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.abrirToolStripMenuItem,
+            this.sairToolStripMenuItem});
+            this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
+            this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
+            this.arquivoToolStripMenuItem.Text = "Arquivo";
+            // 
+            // abrirToolStripMenuItem
+            // 
+            this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
+            this.abrirToolStripMenuItem.Text = "Abrir";
+            // 
+            // sairToolStripMenuItem
+            // 
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
+            this.sairToolStripMenuItem.Text = "Sair";
+            // 
+            // editarToolStripMenuItem
+            // 
+            this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
+            this.editarToolStripMenuItem.Text = "Editar";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(540, 267);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.limpar);
+            this.Controls.Add(this.resultado);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.trabalho);
+            this.Controls.Add(this.p1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.calcular);
+            this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Calculo da Média";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,13 +172,18 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button calcular;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox p1;
+        private System.Windows.Forms.TextBox trabalho;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label resultado;
+        private System.Windows.Forms.Button limpar;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem arquivoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem abrirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
     }
 }
 
